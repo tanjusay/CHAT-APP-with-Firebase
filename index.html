@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio Website</title>
+    <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md p-0 fixed-top bg-dark">
+  <div class="container-xl">
+    <a href="#" class="navbar-brand px-2">
+      PORT<b>.</b>
+    </a>
+    <button class="navbar-toggler px-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav-list" 
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="toggler-btn">
+      <div class="hamburger"
+           onclick="toggleHamburger(this)">
+        <div id="bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </button>
+
+    <div id="nav-list"
+         class="collapse navbar-collapse justify-content-end align-center">
+      <ul class="navbar-nav fw-light p-2">
+        <li class="nav-item">
+          <a href="#main" 
+             class="nav-link ">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" 
+             class="nav-link ">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#connect" 
+             class="nav-link ">Connect</a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>   
+</nav>
+
+<div id="main">
+<div id="container" class="container-sm mt-4">
+  <div class="row g-0 pb-5">
+    
+    <div class="col-sm-4 mt-3 pt-5 text-center order-md-2 d-none d-md-block">
+      <img id="man" src="srcs/deve.svg">
+    </div> 
+    
+    <div class="col-sm-4 mt-5 p-3 pt-3 pb-0 order-md-2 d-md-none">
+      <img id="mano" src="srcs/deve.svg">
+    </div> 
+    
+    <div id="home" class="col-sm-8 p-3 mt-md-5 order-md-1 text-md-start pt-md-5 text-center mt-md-5 mt-3"> 
+      <h1 class="fw-bold display-4">
+       	TECH <span id="name">TANJUSAI</span>
+      </h1>
+      <h2 class="fw-light">Jr. <span>Software</span> Developer
+      </h2>
+      <div class="pb-3">
+        <a href="tanjusayresume.docx" 
+        download="" class="btn text-decoration-none p-1 px-2 mx-1">DOWNLOAD CV
+        </a>
+        <a href="mailto: tanjusaychristianworks@gmail.com" class="btn text-decoration-none p-1 px-2 mx-1"><i class="bi-google"></i> CONNECT
+        </a>  
+      </div>
+      <p class="lead">Here you will find information about my skills, projects, and experiences. Feel free to explore and learn more about me.</p>   
+    </div>
+    
+  </div>
+</div>
+</div>
+
+
+<div id="about" class="">
+  <div class="container py-1">
+    <div class="row py-2">
+      <div class="col-sm-4 d-none d-md-block">
+        <img id="bird" src="srcs/man.png">
+      </div>
+      
+      <div class="col-sm-8">
+        <h2 class="p-3 text-md-start">ABOUT ME</h2>
+        <p class="lead pt-2 px-3 text-light">I'm a graduate of Mechatronics with a passion for software development. I have strong technical skills and experience in programming, and I'm currently at a junior level. I strive to continuously learn and improve my skills to excel in the field of software development.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="for-skills"class="">
+<div id="skill-sec" class="container p-4">
+  <div id="skills" class="row py-2">
+    
+    <div class="col-sm-6 p-3">
+      <h2 class="px-3"> 
+        <span>SKILLS</span>
+      </h2>
+      <div class="p-3">        
+        <p class="lead">
+        <i class="fab fa-python text-center"> 
+        </i> Python</p>
+        <p class="lead">
+        <i class="fab fa-html5 text-center">
+        </i> HTML</p>
+        <p class="lead">
+        <i class="fab text-center fa-bootstrap">
+        </i> CSS/Bootstrap</p>
+        <p class="lead">
+        <i class="fab fa-js text-center">
+        </i> JavaScript</p>
+        <p class="lead"><i class="fas fa-database text-center"></i> SQL</p>
+        <p class="lead">
+        <i class="fas fa-globe text-center">
+        </i> API integration</p>
+      </div>                         
+    </div> 
+   
+    
+    <div class="col-sm-6 p-3 ">
+      <h2 class="px-3"> 
+        <span>PROJECTS</span>
+      </h2>        
+      <div id="projects" class="p-3"> 
+        <p><a href="https://tanjusay.github.io/tic-tac-toe-game-/" class="lead"></i>
+        Tic Tac Toe classic</a></p>
+          <li>
+            <p><a href="#" class="lead"></i>
+        Recipe Finder </a></p>
+          </li>
+          <li>
+            <p><a href="#" class="lead">
+        BMI Calculator</a></p>
+          </li>
+          <li>
+            <p><a href="#" class="lead">
+        WordCloud Generator </a></p>
+          </li>
+          <li>
+            <p><a href="#" class="lead"> 
+        Password Generator</a></p>
+          </li>
+          <li>
+            <p><a href="https://tanjusay-personalqrcodegenerator-streamlit-app-sybfps.streamlit.app/" class="lead">
+        QR Code Generator</a></p>
+          </li>
+          <li>
+            <p><a href="#" class="lead"> 
+        AI Image Generator</a></p>
+          </li>
+       
+      </div>                         
+    </div> 
+    
+  </div>
+</div>
+</div>
+
+<div id="soc" class="bg-dark">
+<div id="connect" class="container-sm">
+  <div class="row">
+    <div id="social" class="col-sm-4  p-3">
+      <h2 class="text-secondary pt-3 px-3 ">Social</h2>
+      <p class="pt-2 px-3">
+        <a href="https://www.linkedin.com/in/christian-tanjusay-459a79176" class="" >Linkedin</a></p>
+      <p class="px-3">
+        <a href="https://www.facebook.com/curse.chan.3" class="" >Facebook</a></p>        
+      <p class="px-3">
+        <a href="https://wa.me/qr/57O6XL4BUW35C1" class="" >Whatsapp</a></p>       
+      <p class="px-3">
+        <a href="https://www.github.com/tanjusay" class="">Github</a></p>        
+    </div>
+ 
+  </div>
+</div>
+</div>
+
+
+<div class="p-1 footer text-secondary text-center bg-dark">
+  <p>&copy 2023 TANJUSAI</p>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+    $(document).ready(function() {
+        $('#nav-list a').on('click', function() {
+            $('#nav-list a').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>
+
+<script>
+function toggleHamburger() {
+  var hamburger = document.querySelector('.hamburger');
+  var menuList = document.querySelector('.dropdown-menu');
+
+  hamburger.classList.toggle("active");
+}
+</script>
+ 
+</body>
+</html>
