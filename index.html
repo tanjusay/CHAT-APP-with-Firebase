@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Personal Website</title>
+  <title>Responsive Portfolio Website</title>
     <!-- CSS -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -13,12 +13,12 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md p-0 fixed-top bg-dark">
+<nav class="navbar navbar-expand-md p-0 fixed-top bg-black">
   <div class="container-xl">
     <a href="#" class="navbar-brand px-2">
-      PORT<b>.</b>
+      TANJUSAI
     </a>
-    <button class="navbar-toggler px-1"
+    <button class="navbar-toggler p-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#nav-list" 
@@ -40,12 +40,16 @@
          class="collapse navbar-collapse justify-content-end align-center">
       <ul class="navbar-nav fw-light p-2">
         <li class="nav-item">
-          <a href="#main" 
+          <a href="#home" 
              class="nav-link ">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#about" 
-             class="nav-link ">About</a>
+          <a href="#stack" 
+             class="nav-link ">Stack</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" 
+             class="nav-link ">Projects</a>
         </li>
         <li class="nav-item">
           <a href="#connect" 
@@ -57,32 +61,32 @@
   </div>   
 </nav>
 
-<div id="main">
+<div id="home" class=" text-dark">
 <div id="container" class="container-sm mt-4">
   <div class="row g-0 pb-5">
     
-    <div class="col-sm-4 mt-3 pt-5 text-center order-md-2 d-none d-md-block">
-      <img id="man" src="deve.svg">
+    <div class="col-sm-5 mt-3 pt-5 order-md-2 d-none d-md-block ">
+      <img class="img-fluid" src="srcs/Apollo.png">
     </div> 
     
-    <div class="col-sm-4 mt-5 p-3 pt-3 pb-0 order-md-2 d-md-none">
-      <img id="mano" src="deve.svg">
+    <div class=" mt-5 p-3 pt-3 pb-0 order-md-2 d-md-none">
+      <img class="img-fluid astro-sm" src="srcs/astro.png">
     </div> 
     
-    <div id="home" class="col-sm-8 p-3 mt-md-5 order-md-1 text-md-start pt-md-5 text-center mt-md-5 mt-3"> 
+    <div class="col-sm-7 p-3 mt-md-5 order-md-1 text-md-start pt-md-5 text-center mt-md-5 mt-3"> 
       <h1 class="fw-bold display-4">
-       	TECH <span id="name">TANJUSAI</span>
+       	<span id="name">TANJUSAI.</span>TECH
       </h1>
-      <h2 class="fw-light">Jr. <span>Software</span> Developer
+      <h2 class="fw-light">Jr. <span class="fw-bold">Software</span> Developer
       </h2>
       <div class="pb-3">
         <a href="tanjusayresume.docx" 
-        download="" class="btn text-decoration-none p-1 px-2 mx-1">DOWNLOAD CV
+        download="" class="btn text-decoration-none text-light p-1 px-2">DOWNLOAD CV
         </a>
-        <a href="mailto: tanjusaychristianworks@gmail.com" class="btn text-decoration-none p-1 px-2 mx-1"><i class="bi-google"></i> CONNECT
+        <a href="mailto: tanjusaychristianworks@gmail.com" class="btn text-decoration-none text-light p-1 px-2 mx-1"><i class="bi-google"></i> CONNECT
         </a>  
       </div>
-      <p class="lead">Here you will find information about my skills, projects, and experiences. Feel free to explore and learn more about me.</p>   
+      <p class="lead text-dark">Here you will find information about my skills, projects, and experiences. Feel free to explore and learn more about me.</p>   
     </div>
     
   </div>
@@ -90,16 +94,16 @@
 </div>
 
 
-<div id="about" class="">
+<div id="about" class="bg-black">
   <div class="container py-1">
     <div class="row py-2">
-      <div class="col-sm-4 d-none d-md-block">
-        <img id="bird" src="man.png">
+      <div class="col-sm-6 d-none d-md-block py-4">
+        <img class="img-fluid" src="srcs/astro.png">
       </div>
       
-      <div class="col-sm-8">
-        <h2 class="p-3 text-md-start">ABOUT ME</h2>
-        <p class="lead pt-2 px-3 text-light">I'm a graduate of Mechatronics with a passion for software development. I have strong technical skills and experience in programming, and I'm currently at a junior level. I strive to continuously learn and improve my skills to excel in the field of software development.
+      <div class="col-sm-6 fade-in my-4">
+        <h2 class="px-3">ABOUT ME</h2>
+        <p class="lead pt-2 px-3">I'm a graduate of Mechatronics with a passion for software development. I have strong technical skills and experience in programming, and I'm currently at a junior level. I strive to continuously learn and improve my skills to excel in the field of software development.
         </p>
       </div>
     </div>
@@ -107,116 +111,192 @@
 </div>
 
 
-<div id="for-skills"class="">
-<div id="skill-sec" class="container p-4">
-  <div id="skills" class="row py-2">
-    
-    <div class="col-sm-6 p-3">
-      <h2 class="px-3"> 
-        <span>SKILLS</span>
-      </h2>
-      <div class="p-3">        
-        <p class="lead">
-        <i class="fab fa-python text-center"> 
-        </i> Python</p>
-        <p class="lead">
-        <i class="fab fa-html5 text-center">
-        </i> HTML</p>
-        <p class="lead">
-        <i class="fab text-center fa-bootstrap">
-        </i> CSS/Bootstrap</p>
-        <p class="lead">
-        <i class="fab fa-js text-center">
-        </i> JavaScript</p>
-        <p class="lead"><i class="fas fa-database text-center"></i> SQL</p>
-        <p class="lead">
-        <i class="fas fa-globe text-center">
-        </i> API integration</p>
-      </div>                         
+<div id="stack" class="text-secondary bg-light">
+<div class="container">
+  <h2 class="px-3 mb-4 pt-5 text-center text-dark">TECH STACK</h2>     
+  <div id="skills" class="row text-center justify-content-evenly px-3 pb-4">
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3" 
+          src="srcs/python.svg" alt="">
+          <p class="lead pt-2">Python | </p>
+      </div>
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/html.svg" alt="" 
+          class="mt-1">
+          <p class="lead pt-2">HTML</p>
+      </div>
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/css.svg" alt="">
+          <p class="lead pt-2">CSS</p>
+      </div> 
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/bootstrap.svg" alt="">
+          <p class="lead pt-2">Bootstrap</p>
+      </div>
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/tailwindcss-light.svg" alt="">
+          <p class="lead pt-2">Tailwind</p>
+      </div>
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/javascript.svg" alt="">
+          <p class="lead pt-2">JavaScript</p>
+      </div>
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/database.svg" alt="">
+          <p class="lead pt-2">SQL</p>
+      </div>     
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3" 
+          src="srcs/st.svg" alt="">
+          <p class="lead pt-2">Streamlit</p>
+      </div>     
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/firebase.svg" alt="">
+          <p class="lead pt-2">Firebase</p>
+      </div>                
     </div> 
+</div>
+</div>
    
-    
-    <div class="col-sm-6 p-3 ">
-      <h2 class="px-3"> 
-        <span>PROJECTS</span>
-      </h2>        
-      <div id="projects" class="p-3"> 
-        <p><a href="https://tanjusay.github.io/tic-tac-toe-game-/" class="lead"></i>
-        Tic Tac Toe classic</a></p>
-          <li>
-            <p><a href="https://tanjusay-recipe-finder-web-app-streamlit-app-02q6bi.streamlit.app/" class="lead"></i>
-        Recipe Finder </a></p>
-          </li>
-          <li>
-            <p><a href="https://tanjusay.github.io/BMI-CALCULATOR/" class="lead">
-        BMI Calculator</a></p>
-          </li>
-          <li>
-            <p><a href="https://tanjusay-wordcloud-web-app-streamlit-app-5ds3rn.streamlit.app/" class="lead">
-        WordCloud Generator </a></p>
-          </li>
-          <li>
-            <p><a href="https://tanjusay-password-generator-web-app-streamlit-app-g5g2dc.streamlit.app/" class="lead"> 
-        Password Generator</a></p>
-          </li>
-          <li>
-            <p><a href="https://tanjusay-personalqrcodegenerator-streamlit-app-sybfps.streamlit.app/" class="lead">
-        QR Code Generator</a></p>
-          </li>
-          <li>
-            <p><a href="https://github.com/tanjusay/image-generator-w--Dall-e-/tree/main" class="lead"> 
-        AI Image Generator</a></p>
-          </li>
-       
-      </div>                         
+<div id="projects" class="bg-light">   
+<div class="container-sm p-4">    
+  <h2 class="text-center pt-4 mb-5">PROJECTS</h2> 
+   
+  <div class="px-3 row text-center justify-content-evenly align-items-center">
+    <div class="col-sm-5 order-sm-2 pb-md-4">
+        <img class="img-thumbnail" src="srcs/pdfgen.jpg">
+    </div>
+    <div class="col-sm-5 order-sm-1 pb-3 text-md-end">
+      <a href="https://tanjusay-wordcloud-web-app-streamlit-app-5ds3rn.streamlit.app/ " class="lead">
+        PDF WordCloud Generator</a>
+        <p class="d-none d-md-block"> A Streamlit-based web application that allows users to upload a PDF file, extract important words from it, and generate a visually appealing word cloud.</p>
     </div> 
     
-  </div>
-</div>
-</div>
-
-<div id="soc" class="bg-dark">
-<div id="connect" class="container-sm">
-  <div class="row">
-    <div id="social" class="col-sm-4  p-3">
-      <h2 class="text-secondary pt-3 px-3 ">Social</h2>
-      <p class="pt-2 px-3">
-        <a href="https://www.linkedin.com/in/christian-tanjusay-459a79176" class="" >Linkedin</a></p>
-      <p class="px-3">
-        <a href="https://www.facebook.com/curse.chan.3" class="" >Facebook</a></p>        
-      <p class="px-3">
-        <a href="https://wa.me/qr/57O6XL4BUW35C1" class="" >Whatsapp</a></p>       
-      <p class="px-3">
-        <a href="https://www.github.com/tanjusay" class="">Github</a></p>        
+    <div class="col-sm-5 order-sm-3 pb-md-4">
+        <img class="img-thumbnail" src="srcs/pgen.jpg">
     </div>
- 
+    <div class="col-sm-5 order-sm-4 pb-3 text-md-start">
+      <a href="https://tanjusay-password-generator-web-app-streamlit-app-g5g2dc.streamlit.app/ " class="lead">
+        Password Generator</a>
+        <p class="d-none d-md-block">user-friendly Streamlit web application that generates secure passwords based on the user's preferences. Users can customize the password length and choose to include lowercase letters, uppercase letters, numbers, and special characters. </p>
+    </div>
+  </div>
+  
+  <div class="px-3 row text-center justify-content-evenly align-items-center"> 
+    <div class="col-sm-5 order-sm-2 pb-md-4">
+        <img class="img-thumbnail" src="srcs/qr.jpg">
+    </div>
+    <div class="col-sm-5 order-sm-1 pb-3 text-md-end">
+      <a href="https://tanjusay-personalqrcodegenerator-streamlit-app-sybfps.streamlit.app/" class="lead ">
+      QR Code Generator</a>
+      <p class="d-none d-md-block">A streamlined Streamlit web app that allows you to create QR codes for text or URLs. Just enter your desired content in the input field, click the "Generate QR Code" button, and the app will swiftly produce a QR code image based on your input. Try it out now! 📲
+      </p>
+    </div>
+   
+    <div class="col-sm-5 order-sm-3 pb-md-4">
+        <img class="img-thumbnail" src="srcs/Apollo.png">
+    </div>  
+    <div class="col-sm-5 order-sm-4 pb-3 text-md-start">
+      <a href="https://github.com/tanjusay/image-generator-w--Dall-e- " class="lead">
+       AI Image Generator</a>
+       <p class="d-none d-md-block">A web-based app utilizing the DALL-E OpenAI API to create captivating images from text prompts.</p>
+       <p class="text-info d-none d-md-block">
+Please note that the app is currently unavailable due to the lack of free tokens for the DALL-E API. </p>
+    </div>
+  </div>
+  
+  <div class="px-3 row text-center justify-content-evenly align-items-center">  
+    <div class="col-sm-5 order-sm-2 pb-md-4 slide-in from-left">
+        <img class="img-thumbnail" src="srcs/tic.jpg">
+    </div>
+    <div class="col-sm-5 order-sm-1 pb-3 text-md-end">
+      <a href="https://tanjusay.github.io/tic-tac-toe-game-/ " class="lead">
+        Tic-Tac-Toe</a>
+        <p class="d-none d-md-block">A classic two-player game on a 3x3 grid. Take turns marking spaces with X or O, aiming to get three in a row. Win by a horizontal, vertical, or diagonal line. Simple, engaging, and fun for all ages! 🎮 ❌⭕️ </p>
+    </div>
+    
+    <div class="col-sm-5 order-sm-3 pb-md-4">
+        <img class="img-thumbnail" src="srcs/recipe.jpg">
+    </div>
+    <div class="col-sm-5 order-sm-4 pb-3 text-md-start">
+      <a href="https://tanjusay-recipe-finder-web-app-streamlit-app-02q6bi.streamlit.app/ " class="lead">
+        recipe finder</a>
+        <p class="d-none d-md-block">Discover delicious recipes based on your available ingredients with this handy Streamlit app. Simply enter your ingredients, separated by commas, and click "Get Recipes." The app will fetch and display a list of recipes along with their mouthwatering images. See the missing ingredients for each recipe to decide what to cook next! Bon appétit! 🍽️🍳 </p>
+    </div>
+  </div>
+  
+  <div class="px-3 row text-center justify-content-evenly align-items-center">
+    <div class="col-sm-5 order-sm-2 pb-md-4">
+        <img class="img-thumbnail" src="srcs/bmi.jpg">
+    </div>
+    <div class="col-sm-5 order-sm-1 pb-3 text-md-end">
+      <a href="https://tanjusay.github.io/BMI-CALCULATOR/" class="lead">
+        BMI Calculator</a>
+        <p class="d-none d-md-block text-md-end">An intuitive web page that allows users to calculate their Body Mass Index (BMI) effortlessly. The page will instantly display your BMI along with the corresponding BMI category. Keep track of your health and make informed decisions based on your BMI results. 📈🏋️‍♀️</p>
+    </div>
+  </div>
+    
+  </div>
+</div>
+</div> 
+    
+
+<div id="social" class="bg-black">
+<div id="connect" class="container-sm">
+  <div class="row p-5 justify-content-center">
+    <div class="col-2 col-sm-1">      
+        <a href="https://www.linkedin.com/in/christian-tanjusay-459a79176">
+        <img src="srcs/linkedin.svg"></a>
+    </div>
+    
+    <div class="col-2 col-sm-1">   
+        <a href="https://www.facebook.com/curse.chan.3">
+        <img src="srcs/facebook.svg"></a>
+    </div>
+    
+    <div class="col-2 col-sm-1">   
+        <a href="https://wa.me/qr/57O6XL4BUW35C1" >
+        <img src="srcs/square-whatsapp.svg"></a>
+    </div>
+    
+    <div class="col-2 col-sm-1">   
+        <a href="https://www.github.com/tanjusay">
+            <img src="srcs/github-square.svg"></a>      
+    </div>        
+    
   </div>
 </div>
 </div>
 
 
-<div class="p-1 footer text-secondary text-center bg-dark">
+<div class="p-2 footer text-secondary text-center bg-black">
   <p>&copy 2023 TANJUSAI</p>
 </div>
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6445d73b31ebfa0fe7f9f79b/1h5k3jeic';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
+<!--Start of Tawk.to Script--> 
+ <script type="text/javascript"> 
+ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); 
+ (function(){ 
+ var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; 
+ s1.async=true; 
+ s1.src='https://embed.tawk.to/6445d73b31ebfa0fe7f9f79b/1h5k3jeic'; 
+ s1.charset='UTF-8'; 
+ s1.setAttribute('crossorigin','*'); 
+ s0.parentNode.insertBefore(s1,s0); 
+ })(); 
+ </script> 
+ <!--End of Tawk.to Script-->
 
 <script>
     $(document).ready(function() {
@@ -235,6 +315,328 @@ function toggleHamburger() {
   hamburger.classList.toggle("active");
 }
 </script>
- 
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio Website</title>
+    <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md p-0 fixed-top bg-black">
+  <div class="container-xl">
+    <a href="#" class="navbar-brand px-2">
+      TANJUSAI
+    </a>
+    <button class="navbar-toggler p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav-list" 
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="toggler-btn">
+      <div class="hamburger"
+           onclick="toggleHamburger(this)">
+        <div id="bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </button>
+
+    <div id="nav-list"
+         class="collapse navbar-collapse justify-content-end align-center">
+      <ul class="navbar-nav fw-light p-2">
+        <li class="nav-item">
+          <a href="#home" 
+             class="nav-link ">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#stack" 
+             class="nav-link ">Stack</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" 
+             class="nav-link ">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#connect" 
+             class="nav-link ">Connect</a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>   
+</nav>
+
+<div id="home" class=" text-dark">
+<div id="container" class="container-sm mt-4">
+  <div class="row g-0 pb-5">
+    
+    <div class="col-sm-5 mt-3 pt-5 order-md-2 d-none d-md-block ">
+      <img class="img-fluid" src="srcs/Apollo.png">
+    </div> 
+    
+    <div class=" mt-5 p-3 pt-3 pb-0 order-md-2 d-md-none">
+      <img class="img-fluid astro-sm" src="srcs/astro.png">
+    </div> 
+    
+    <div class="col-sm-7 p-3 mt-md-5 order-md-1 text-md-start pt-md-5 text-center mt-md-5 mt-3"> 
+      <h1 class="fw-bold display-4">
+       	<span id="name">TANJUSAI.</span>TECH
+      </h1>
+      <h2 class="fw-light">Jr. <span class="fw-bold">Software</span> Developer
+      </h2>
+      <div class="pb-3">
+        <a href="tanjusayresume.docx" 
+        download="" class="btn text-decoration-none text-light p-1 px-2">DOWNLOAD CV
+        </a>
+        <a href="mailto: tanjusaychristianworks@gmail.com" class="btn text-decoration-none text-light p-1 px-2 mx-1"><i class="bi-google"></i> CONNECT
+        </a>  
+      </div>
+      <p class="lead text-dark">Here you will find information about my skills, projects, and experiences. Feel free to explore and learn more about me.</p>   
+    </div>
+    
+  </div>
+</div>
+</div>
+
+
+<div id="about" class="bg-black">
+  <div class="container py-1">
+    <div class="row py-2">
+      <div class="col-sm-6 d-none d-md-block py-4">
+        <img class="img-fluid" src="srcs/astro.png">
+      </div>
+      
+      <div class="col-sm-6 fade-in my-4">
+        <h2 class="px-3">ABOUT ME</h2>
+        <p class="lead pt-2 px-3">I'm a graduate of Mechatronics with a passion for software development. I have strong technical skills and experience in programming, and I'm currently at a junior level. I strive to continuously learn and improve my skills to excel in the field of software development.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="stack" class="text-secondary bg-light">
+<div class="container">
+  <h2 class="px-3 mb-4 pt-5 text-center text-dark">TECH STACK</h2>     
+  <div id="skills" class="row text-center justify-content-evenly px-3 pb-4">
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3" 
+          src="srcs/python.svg" alt="">
+          <p class="lead pt-2">Python | </p>
+      </div>
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/html.svg" alt="" 
+          class="mt-1">
+          <p class="lead pt-2">HTML</p>
+      </div>
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/css.svg" alt="">
+          <p class="lead pt-2">CSS</p>
+      </div> 
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/bootstrap.svg" alt="">
+          <p class="lead pt-2">Bootstrap</p>
+      </div>
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/tailwindcss-light.svg" alt="">
+          <p class="lead pt-2">Tailwind</p>
+      </div>
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/javascript.svg" alt="">
+          <p class="lead pt-2">JavaScript</p>
+      </div>
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/database.svg" alt="">
+          <p class="lead pt-2">SQL</p>
+      </div>     
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3" 
+          src="srcs/st.svg" alt="">
+          <p class="lead pt-2">Streamlit</p>
+      </div>     
+      <div class="col-5 col-sm-3 pt-4 m-2">
+          <img class="rounded-3"
+          src="srcs/firebase.svg" alt="">
+          <p class="lead pt-2">Firebase</p>
+      </div>                
+    </div> 
+</div>
+</div>
+   
+<div id="projects" class="bg-light">   
+<div class="container-sm p-4">    
+  <h2 class="text-center pt-4 mb-5">PROJECTS</h2> 
+   
+  <div class="px-3 row text-center justify-content-evenly align-items-center">
+    <div class="col-sm-5 order-sm-2 pb-md-4">
+        <img class="img-thumbnail" src="srcs/pdfgen.jpg">
+    </div>
+    <div class="col-sm-5 order-sm-1 pb-3 text-md-end">
+      <a href="https://tanjusay-wordcloud-web-app-streamlit-app-5ds3rn.streamlit.app/ " class="lead">
+        PDF WordCloud Generator</a>
+        <p class="d-none d-md-block"> A Streamlit-based web application that allows users to upload a PDF file, extract important words from it, and generate a visually appealing word cloud.</p>
+    </div> 
+    
+    <div class="col-sm-5 order-sm-3 pb-md-4">
+        <img class="img-thumbnail" src="srcs/pgen.jpg">
+    </div>
+    <div class="col-sm-5 order-sm-4 pb-3 text-md-start">
+      <a href="https://tanjusay-password-generator-web-app-streamlit-app-g5g2dc.streamlit.app/ " class="lead">
+        Password Generator</a>
+        <p class="d-none d-md-block">user-friendly Streamlit web application that generates secure passwords based on the user's preferences. Users can customize the password length and choose to include lowercase letters, uppercase letters, numbers, and special characters. </p>
+    </div>
+  </div>
+  
+  <div class="px-3 row text-center justify-content-evenly align-items-center"> 
+    <div class="col-sm-5 order-sm-2 pb-md-4">
+        <img class="img-thumbnail" src="srcs/qr.jpg">
+    </div>
+    <div class="col-sm-5 order-sm-1 pb-3 text-md-end">
+      <a href="https://tanjusay-personalqrcodegenerator-streamlit-app-sybfps.streamlit.app/" class="lead ">
+      QR Code Generator</a>
+      <p class="d-none d-md-block">A streamlined Streamlit web app that allows you to create QR codes for text or URLs. Just enter your desired content in the input field, click the "Generate QR Code" button, and the app will swiftly produce a QR code image based on your input. Try it out now! 📲
+      </p>
+    </div>
+   
+    <div class="col-sm-5 order-sm-3 pb-md-4">
+        <img class="img-thumbnail" src="srcs/Apollo.png">
+    </div>  
+    <div class="col-sm-5 order-sm-4 pb-3 text-md-start">
+      <a href="https://github.com/tanjusay/image-generator-w--Dall-e- " class="lead">
+       AI Image Generator</a>
+       <p class="d-none d-md-block">A web-based app utilizing the DALL-E OpenAI API to create captivating images from text prompts.</p>
+       <p class="text-info d-none d-md-block">
+Please note that the app is currently unavailable due to the lack of free tokens for the DALL-E API. </p>
+    </div>
+  </div>
+  
+  <div class="px-3 row text-center justify-content-evenly align-items-center">  
+    <div class="col-sm-5 order-sm-2 pb-md-4 slide-in from-left">
+        <img class="img-thumbnail" src="srcs/tic.jpg">
+    </div>
+    <div class="col-sm-5 order-sm-1 pb-3 text-md-end">
+      <a href="https://tanjusay.github.io/tic-tac-toe-game-/ " class="lead">
+        Tic-Tac-Toe</a>
+        <p class="d-none d-md-block">A classic two-player game on a 3x3 grid. Take turns marking spaces with X or O, aiming to get three in a row. Win by a horizontal, vertical, or diagonal line. Simple, engaging, and fun for all ages! 🎮 ❌⭕️ </p>
+    </div>
+    
+    <div class="col-sm-5 order-sm-3 pb-md-4">
+        <img class="img-thumbnail" src="srcs/recipe.jpg">
+    </div>
+    <div class="col-sm-5 order-sm-4 pb-3 text-md-start">
+      <a href="https://tanjusay-recipe-finder-web-app-streamlit-app-02q6bi.streamlit.app/ " class="lead">
+        recipe finder</a>
+        <p class="d-none d-md-block">Discover delicious recipes based on your available ingredients with this handy Streamlit app. Simply enter your ingredients, separated by commas, and click "Get Recipes." The app will fetch and display a list of recipes along with their mouthwatering images. See the missing ingredients for each recipe to decide what to cook next! Bon appétit! 🍽️🍳 </p>
+    </div>
+  </div>
+  
+  <div class="px-3 row text-center justify-content-evenly align-items-center">
+    <div class="col-sm-5 order-sm-2 pb-md-4">
+        <img class="img-thumbnail" src="srcs/bmi.jpg">
+    </div>
+    <div class="col-sm-5 order-sm-1 pb-3 text-md-end">
+      <a href="https://tanjusay.github.io/BMI-CALCULATOR/" class="lead">
+        BMI Calculator</a>
+        <p class="d-none d-md-block text-md-end">An intuitive web page that allows users to calculate their Body Mass Index (BMI) effortlessly. The page will instantly display your BMI along with the corresponding BMI category. Keep track of your health and make informed decisions based on your BMI results. 📈🏋️‍♀️</p>
+    </div>
+  </div>
+    
+  </div>
+</div>
+</div> 
+    
+
+<div id="social" class="bg-black">
+<div id="connect" class="container-sm">
+  <div class="row p-5 justify-content-center">
+    <div class="col-2 col-sm-1">      
+        <a href="https://www.linkedin.com/in/christian-tanjusay-459a79176">
+        <img src="srcs/linkedin.svg"></a>
+    </div>
+    
+    <div class="col-2 col-sm-1">   
+        <a href="https://www.facebook.com/curse.chan.3">
+        <img src="srcs/facebook.svg"></a>
+    </div>
+    
+    <div class="col-2 col-sm-1">   
+        <a href="https://wa.me/qr/57O6XL4BUW35C1" >
+        <img src="srcs/square-whatsapp.svg"></a>
+    </div>
+    
+    <div class="col-2 col-sm-1">   
+        <a href="https://www.github.com/tanjusay">
+            <img src="srcs/github-square.svg"></a>      
+    </div>        
+    
+  </div>
+</div>
+</div>
+
+
+<div class="p-2 footer text-secondary text-center bg-black">
+  <p>&copy 2023 TANJUSAI</p>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--Start of Tawk.to Script--> 
+ <script type="text/javascript"> 
+ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); 
+ (function(){ 
+ var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; 
+ s1.async=true; 
+ s1.src='https://embed.tawk.to/6445d73b31ebfa0fe7f9f79b/1h5k3jeic'; 
+ s1.charset='UTF-8'; 
+ s1.setAttribute('crossorigin','*'); 
+ s0.parentNode.insertBefore(s1,s0); 
+ })(); 
+ </script> 
+ <!--End of Tawk.to Script-->
+
+<script>
+    $(document).ready(function() {
+        $('#nav-list a').on('click', function() {
+            $('#nav-list a').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>
+
+<script>
+function toggleHamburger() {
+  var hamburger = document.querySelector('.hamburger');
+  var menuList = document.querySelector('.dropdown-menu');
+
+  hamburger.classList.toggle("active");
+}
+</script>
+
+
 </body>
 </html>
