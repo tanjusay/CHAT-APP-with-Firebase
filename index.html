@@ -3,20 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Portfolio Website</title>
+  <title>PERSONAL WEBSITE until employment</title>
     <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="srcs/1.png">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">  
+  <link rel="stylesheet" href="style.css"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  
 
 </head>
+
+  
 <body>
 
-<nav class="navbar navbar-expand-md p-0 fixed-top bg-black">
-  <div class="container-xl">
+<div id="preloader" class="d-flex align-items-center justify-content-center">
+  <iconify-icon icon="eos-icons:three-dots-loading" style="color: seagreen; font-size: 80px;"></iconify-icon>
+</div>
+  
+<nav id="nav" class="navscroll navbar navbar-expand-md fixed-top navbar-md-static-top py-2 bg-light shadow-sm ">
+  <div id="logo" class="container-lg">
     <a href="#" class="navbar-brand px-2">
-      TANJUSAI
+       tanjus<span>ai</span>
     </a>
     <button class="navbar-toggler p-0"
             type="button"
@@ -29,31 +38,45 @@
       <div class="hamburger"
            onclick="toggleHamburger(this)">
         <div id="bars">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
         </div>
       </div>
     </button>
 
     <div id="nav-list"
-         class="collapse navbar-collapse justify-content-end align-center">
-      <ul class="navbar-nav fw-light p-2">
-        <li class="nav-item">
-          <a href="#home" 
+         class="collapse navbar-collapse text-start justify-content-end p-md-2">
+      <ul class="navbar-nav fw-light p-2 gap-2"> 
+        <li class="nav-item ">
+          <span class="d-inline-block px-1">            
+              <a href="#" 
              class="nav-link ">Home</a>
+           </span>             
+        </li>       
+        <li class="nav-item ">
+          <span class="d-inline-block px-1">            
+              <a href="#about" 
+             class="nav-link ">About</a>
+           </span>             
+        </li>          
+        <li class="nav-item">
+          <span class="d-inline-block px-1 ">
+              <a href="#skills" 
+             class="nav-link ">Skills</a>
+           </span>
         </li>
         <li class="nav-item">
-          <a href="#stack" 
-             class="nav-link ">Stack</a>
+          <span class="d-inline-block px-1">
+              <a href="#services" 
+             class="nav-link ">Services</a>
+          </span>
         </li>
-        <li class="nav-item">
-          <a href="#projects" 
-             class="nav-link ">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="#connect" 
-             class="nav-link ">Connect</a>
+        <li class="nav-item pb-3 pb-md-0">
+          <span class="d-inline-block px-1 ">
+              <a href="#social" 
+             class="nav-link ">Get in Touch</a>
+           </span>
         </li>
       </ul>
     </div>
@@ -61,233 +84,212 @@
   </div>   
 </nav>
 
-<div id="home" class=" text-dark">
-<div id="container" class="container-sm mt-4">
-  <div class="row g-0 pb-5">
+<div id="main" class="vh-100 d-flex align-items-center shadow">
+<div class="container-sm">
+
+  <div class="row justify-content-center">
     
-    <div class="col-sm-5 mt-3 pt-5 order-md-2 d-none d-md-block ">
-      <img class="img-fluid" src="srcs/Apollo.png">
-    </div> 
-    
-    <div class=" mt-5 p-3 pt-3 pb-0 order-md-2 d-md-none">
-      <img class="img-fluid astro-sm" src="srcs/astro.png">
-    </div> 
-    
-    <div class="col-sm-7 p-3 mt-md-5 order-md-1 text-md-start pt-md-5 text-center mt-md-5 mt-3"> 
-      <h1 class="fw-bold display-4">
-       	<span id="name">TANJUSAI.</span>TECH
-      </h1>
-      <h2 class="fw-light">Jr. <span class="fw-bold">Software</span> Developer
-      </h2>
-      <div class="pb-3">
-        <a href="tanjusayresume.docx" 
-        download="" class="btn text-decoration-none text-light p-1 px-2">DOWNLOAD CV
-        </a>
-        <a href="mailto: tanjusaychristianworks@gmail.com" class="btn text-decoration-none text-light p-1 px-2 mx-1"><i class="bi-google"></i> CONNECT
-        </a>  
-      </div>
-      <p class="lead text-dark">Here you will find information about my skills, projects, and experiences. Feel free to explore and learn more about me.</p>   
+    <div class="col-md-11 text-center"> 
+      
+      <h1 class="display-1">tanjusai</h1>
+      <h3 class="display-6">
+        Software Developer
+      </h3>
+      <p class="lead">
+        From Circuits to Code :
+      </p>
+      <h4 class="mb-3">
+        Journey to Full-Stack Excellence 
+      </h4>  
+      <a href="#" class="btn mx-1">Download CV</a>
+      <a href="#about" class="btn mx-1">About me</a>
     </div>
     
   </div>
+  
 </div>
 </div>
 
-
-<div id="about" class="bg-black">
-  <div class="container py-1">
-    <div class="row py-2">
-      <div class="col-sm-6 d-none d-md-block py-4">
-        <img class="img-fluid" src="srcs/astro.png">
+<section id="about" class="text-secondary d-flex align-items-center vh-100 bg-light"> 
+  <div class="container-sm "> 
+    <div class="row justify-content-center">
+      <div class="col-sm-4"> 
+        <h1 id="me" class="display-1 position-absolute d-md-none"> About 
+          </br><span id="me"> Me</span>
+        </h1>
+        <img id="me" class="px-5 pt-3 p-sm-4" src="srcs/profile.png" alt=""> 
       </div>
       
-      <div class="col-sm-6 fade-in my-4">
-        <h2 class="px-3">ABOUT ME</h2>
-        <p class="lead pt-2 px-3">I'm a graduate of Mechatronics with a passion for software development. I have strong technical skills and experience in programming, and I'm currently at a junior level. I strive to continuously learn and improve my skills to excel in the field of software development.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div id="stack" class="text-secondary bg-light">
-<div class="container">
-  <h2 class="px-3 mb-4 pt-5 text-center text-dark">TECH STACK</h2>     
-  <div id="skills" class="row text-center justify-content-evenly px-3 pb-4">
-      <div class="col-5 col-sm-3 pt-4 m-2">
-          <img class="rounded-3" 
-          src="srcs/python.svg" alt="">
-          <p class="lead pt-2">Python | </p>
-      </div>
-      <div class="col-5 col-sm-3 pt-4 m-2">
-          <img class="rounded-3"
-          src="srcs/html.svg" alt="" 
-          class="mt-1">
-          <p class="lead pt-2">HTML</p>
-      </div>
-      <div class="col-5 col-sm-3 pt-4 m-2">
-          <img class="rounded-3"
-          src="srcs/css.svg" alt="">
-          <p class="lead pt-2">CSS</p>
+      <div class="col-sm-8 mt-md-4 text-md-start">
+        <h2 id="me"class="fw-normal display-4 d-none d-md-block px-3">About <span>Me</span>
+        </h2>
+        
+        <p id="me" class="lead px-3"> HELLO! 
+        I'm Christian Tanjusay,
+        </br>a Mechatronics Technology graduate turned software enthusiast. From gears and circuits to the captivating world of coding.</br> Don't hesitate to 
+        <a class="text-decoration-none" href="mailto:tanjusaychristianworks@gmail.com">reach out</a> — I'm always eager for a thoughtful conversation. </p>
       </div> 
-      <div class="col-5 col-sm-3 pt-4 m-2">
-          <img class="rounded-3"
-          src="srcs/bootstrap.svg" alt="">
-          <p class="lead pt-2">Bootstrap</p>
-      </div>
-      <div class="col-5 col-sm-3 pt-4 m-2">
-          <img class="rounded-3"
-          src="srcs/tailwindcss-light.svg" alt="">
-          <p class="lead pt-2">Tailwind</p>
-      </div>
-      <div class="col-5 col-sm-3 pt-4 m-2">
-          <img class="rounded-3"
-          src="srcs/javascript.svg" alt="">
-          <p class="lead pt-2">JavaScript</p>
-      </div>
-      <div class="col-5 col-sm-3 pt-4 m-2">
-          <img class="rounded-3"
-          src="srcs/database.svg" alt="">
-          <p class="lead pt-2">SQL</p>
-      </div>     
-      <div class="col-5 col-sm-3 pt-4 m-2">
-          <img class="rounded-3" 
-          src="srcs/st.svg" alt="">
-          <p class="lead pt-2">Streamlit</p>
-      </div>     
-      <div class="col-5 col-sm-3 pt-4 m-2">
-          <img class="rounded-3"
-          src="srcs/firebase.svg" alt="">
-          <p class="lead pt-2">Firebase</p>
-      </div>                
     </div> 
-</div>
-</div>
-   
-<div id="projects" class="bg-light">   
-<div class="container-sm p-4">    
-  <h2 class="text-center pt-4 mb-5">PROJECTS</h2> 
-   
-  <div class="px-3 row text-center justify-content-evenly align-items-center">
-    <div class="col-sm-5 order-sm-2 pb-md-4">
-        <img class="img-thumbnail" src="srcs/pdfgen.jpg">
-    </div>
-    <div class="col-sm-5 order-sm-1 pb-3 text-md-end">
-      <a href="https://tanjusay-wordcloud-web-app-streamlit-app-5ds3rn.streamlit.app/ " class="lead">
-        PDF WordCloud Generator</a>
-        <p class="d-none d-md-block"> A Streamlit-based web application that allows users to upload a PDF file, extract important words from it, and generate a visually appealing word cloud.</p>
-    </div> 
+  </div> 
+</section> 
+
+<section id="skills" class="vh-100 bg-light">
+  
+<div class="container-md text-secondary text-center">
     
-    <div class="col-sm-5 order-sm-3 pb-md-4">
-        <img class="img-thumbnail" src="srcs/pgen.jpg">
-    </div>
-    <div class="col-sm-5 order-sm-4 pb-3 text-md-start">
-      <a href="https://tanjusay-password-generator-web-app-streamlit-app-g5g2dc.streamlit.app/ " class="lead">
-        Password Generator</a>
-        <p class="d-none d-md-block">user-friendly Streamlit web application that generates secure passwords based on the user's preferences. Users can customize the password length and choose to include lowercase letters, uppercase letters, numbers, and special characters. </p>
+  <h2 class=" pt-5 text-center text-secondary display-4 fw-normal">My <span>Skills</span></h2>  
+  <p class="text-secondary lead mb-4 "> Skills and Proficiencies </p>
+  
+  <div class="row g-4 g-md-5 fw-bold justify-content-evenly">    
+  
+  <div class="col-10 col-md-5 text-start">
+    <p class="lead fw-normal m-0 px-1 ">
+      html</p>
+    <div class="progress shadow">
+      <div class=" px-2 text-end progressBar" 
+           style="width: 90%"> 90% 
+      </div>
     </div>
   </div>
   
-  <div class="px-3 row text-center justify-content-evenly align-items-center"> 
-    <div class="col-sm-5 order-sm-2 pb-md-4">
-        <img class="img-thumbnail" src="srcs/qr.jpg">
+  <div class="col-10 col-md-5 text-start">
+    <p class="lead fw-normal m-0 px-1">
+      css / bootsrap</p> 
+    <div class="progress shadow ">
+      <div class=" px-2 text-end progressBar"  
+           style="width: 80%"> 80%
+     </div>
     </div>
-    <div class="col-sm-5 order-sm-1 pb-3 text-md-end">
-      <a href="https://tanjusay-personalqrcodegenerator-streamlit-app-sybfps.streamlit.app/" class="lead ">
-      QR Code Generator</a>
-      <p class="d-none d-md-block">A streamlined Streamlit web app that allows you to create QR codes for text or URLs. Just enter your desired content in the input field, click the "Generate QR Code" button, and the app will swiftly produce a QR code image based on your input. Try it out now! 📲
-      </p>
+  </div>
+
+  <div class="col-10 col-md-5 text-start">
+    <p class="lead fw-normal m-0 px-1">
+      python</p> 
+    <div class="progress shadow ">
+      <div class=" px-2 text-end progressBar" 
+           style="width: 65%"> 65%
     </div>
-   
-    <div class="col-sm-5 order-sm-3 pb-md-4">
-        <img class="img-thumbnail" src="srcs/Apollo.png">
+    </div>
+  </div>
+  
+  <div class="col-10 col-md-5 text-start">
+    <p class="lead fw-normal m-0 px-1">
+      javascript</p> 
+    <div class="progress shadow">
+      <div class=" px-2 text-end progressBar" 
+           style="width: 60%"> 60%
+    </div>
+    </div>
+  </div>
+  
+  <div class="col-10 col-md-5 text-start">
+    <p class="lead fw-normal m-0 px-1">
+      mysql</p> 
+    <div class="progress shadow ">
+      <div class=" px-2 text-end progressBar" 
+           style="width: 50%"> 50%
+    </div>
+    </div>
+  </div>
+  
+  <div class="col-10 col-md-5 text-start"> 
+    <p class="lead fw-normal m-0 px-1">
+      streamlit</p> 
+    <div class="progress shadow bg-light"> 
+      <div class="px-2 text-end progressBar" style="width: 50%"> 50% 
+        </div> 
+      </div> 
     </div>  
-    <div class="col-sm-5 order-sm-4 pb-3 text-md-start">
-      <a href="https://github.com/tanjusay/image-generator-w--Dall-e- " class="lead">
-       AI Image Generator</a>
-       <p class="d-none d-md-block">A web-based app utilizing the DALL-E OpenAI API to create captivating images from text prompts.</p>
-       <p class="text-info d-none d-md-block">
-Please note that the app is currently unavailable due to the lack of free tokens for the DALL-E API. </p>
-    </div>
-  </div>
-  
-  <div class="px-3 row text-center justify-content-evenly align-items-center">  
-    <div class="col-sm-5 order-sm-2 pb-md-4 slide-in from-left">
-        <img class="img-thumbnail" src="srcs/tic.jpg">
-    </div>
-    <div class="col-sm-5 order-sm-1 pb-3 text-md-end">
-      <a href="https://tanjusay.github.io/tic-tac-toe-game-/ " class="lead">
-        Tic-Tac-Toe</a>
-        <p class="d-none d-md-block">A classic two-player game on a 3x3 grid. Take turns marking spaces with X or O, aiming to get three in a row. Win by a horizontal, vertical, or diagonal line. Simple, engaging, and fun for all ages! 🎮 ❌⭕️ </p>
-    </div>
-    
-    <div class="col-sm-5 order-sm-3 pb-md-4">
-        <img class="img-thumbnail" src="srcs/recipe.jpg">
-    </div>
-    <div class="col-sm-5 order-sm-4 pb-3 text-md-start">
-      <a href="https://tanjusay-recipe-finder-web-app-streamlit-app-02q6bi.streamlit.app/ " class="lead">
-        recipe finder</a>
-        <p class="d-none d-md-block">Discover delicious recipes based on your available ingredients with this handy Streamlit app. Simply enter your ingredients, separated by commas, and click "Get Recipes." The app will fetch and display a list of recipes along with their mouthwatering images. See the missing ingredients for each recipe to decide what to cook next! Bon appétit! 🍽️🍳 </p>
-    </div>
-  </div>
-  
-  <div class="px-3 row text-center justify-content-evenly align-items-center">
-    <div class="col-sm-5 order-sm-2 pb-md-4">
-        <img class="img-thumbnail" src="srcs/bmi.jpg">
-    </div>
-    <div class="col-sm-5 order-sm-1 pb-3 text-md-end">
-      <a href="https://tanjusay.github.io/BMI-CALCULATOR/" class="lead">
-        BMI Calculator</a>
-        <p class="d-none d-md-block text-md-end">An intuitive web page that allows users to calculate their Body Mass Index (BMI) effortlessly. The page will instantly display your BMI along with the corresponding BMI category. Keep track of your health and make informed decisions based on your BMI results. 📈🏋️‍♀️</p>
-    </div>
-  </div>
-    
-  </div>
+                    
+  </div> 
 </div>
-</div> 
-    
+</section>
+   
+<section id="services" class="bg-light">
+  <div class="container-md text-secondary text-center pb-5">
+    <h2 class="pt-5 display-4 fw-normal">What <span>I Do</span></h2>
+    <p class="text-secondary lead mb-4"> Explore What I Have to Offer</p>
+    <div class="row g-3 justify-content-center px-3">
 
-<div id="social" class="bg-black">
-<div id="connect" class="container-sm">
-  <div class="row p-5 justify-content-center">
-    <div class="col-2 col-sm-1">      
-        <a href="https://www.linkedin.com/in/christian-tanjusay-459a79176">
-        <img src="srcs/linkedin.svg"></a>
+      <div class="card border-0 col-sm-5 m-3 col-lg-5 shadow-sm text-secondary">
+        <div class="card-body mb-3">
+          <i class="bi bi-code-slash fs-1"></i>
+          <h3 class="card-title fw-bold">Web Development</h3>
+          <p class="card-text">Crafting responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+
+      <div class="card border-0 col-sm-5 m-3 col-lg-5 shadow-sm text-secondary ">
+        <div class="card-body mb-3">
+          <i class="bi bi-palette fs-1"></i>
+          <h3 class="card-title fw-bold">UI/UX Design</h3>
+          <p class="card-text">Creating visually appealing and intuitive user interfaces that enhance user experience.</p>
+        </div>
+      </div>
+      
+      <div class="card border-0 col-sm-5 m-3 col-lg-5 shadow-sm text-secondary ">
+        <div class="card-body mb-3">
+          <i class="bi bi-search fs-1"></i>
+          <h3 class="card-title fw-bold">Quality Assurance</h3>
+          <p class="card-text"> Ensuring reliability and functionality of your software / website.</p>
+        </div>
+      </div>
+      
+
+      <div class="card border-0 col-sm-5 col-lg-5 m-3 shadow-sm text-secondary">
+        <div class="card-body mb-3">
+          <i class="bi bi-link-45deg fs-1"></i>
+          <h3 class="card-title fw-bold">API Integration</h3>
+          <p class="card-text">Integrating APIs to enhance the functionality and features of your applications.</p>
+        </div>
+      </div>
+
+      <div class="card border-0 col-sm-5 col-lg-5 m-3 shadow-sm text-secondary">
+        <div class="card-body mb-3">
+          <i class="bi bi-scissors fs-1"></i>
+          <h3 class="card-title fw-bold">Web Scraping</h3>
+          <p class="card-text">Collecting data from websites efficiently through web scraping techniques.</p>
+        </div>
+      </div>
+
     </div>
-    
-    <div class="col-2 col-sm-1">   
-        <a href="https://www.facebook.com/curse.chan.3">
-        <img src="srcs/facebook.svg"></a>
-    </div>
-    
-    <div class="col-2 col-sm-1">   
-        <a href="https://wa.me/qr/57O6XL4BUW35C1" >
-        <img src="srcs/square-whatsapp.svg"></a>
-    </div>
-    
-    <div class="col-2 col-sm-1">   
-        <a href="https://www.github.com/tanjusay">
-            <img src="srcs/github-square.svg"></a>      
-    </div>        
-    
   </div>
-</div>
-</div>
+</section>
 
 
-<div class="p-2 footer text-secondary text-center bg-black">
-  <p>&copy 2023 TANJUSAI</p>
-</div>
+
+<section id="social" class="bg-secondary shadow-lg">
+  <div class="container pl-md-5 ">
+    <div class="row text-start px-md-5">
+      <div class="col-auto mx-2 mx-md-4">
+        <div class="d-flex mt-4">
+          <a class="social-icon text-decoration-none" href="https://www.linkedin.com/in/christian-tanjusay-459a79176">
+          <img src="srcs/linkedin-with-circle.svg" alt="LinkedIn"> LinkedIn</a>
+        </div>
+        <div class="d-flex">
+          <a class="social-icon text-decoration-none" href=" https://www.facebook.com/curse.chan.3 ">
+          <img src="srcs/facebook-with-circle.svg" alt="Facebook"> Facebook </a>
+        </div>
+        <div class="d-flex">
+         <a class="social-icon text-decoration-none" href="https://www.github.com/tanjusay">
+          <img src="srcs/github-with-circle.svg" alt="GitHub"> Github </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-1 px-3 px-md-5 footer text-light text-center container">
+    <p>&copy; tanjusai</p>
+  </div>
+</section>
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<!--Start of Tawk.to Script--> 
- <script type="text/javascript"> 
- var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); 
- (function(){ 
+<!--Start of Tawk.to Script -->
+<script type="text/javascript"> 
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); 
+(function(){ 
  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; 
  s1.async=true; 
  s1.src='https://embed.tawk.to/6445d73b31ebfa0fe7f9f79b/1h5k3jeic'; 
@@ -295,8 +297,9 @@ Please note that the app is currently unavailable due to the lack of free tokens
  s1.setAttribute('crossorigin','*'); 
  s0.parentNode.insertBefore(s1,s0); 
  })(); 
- </script> 
- <!--End of Tawk.to Script-->
+</script> 
+
+<!--End of Tawk.to Script-->
 
 <script>
     $(document).ready(function() {
@@ -310,12 +313,66 @@ Please note that the app is currently unavailable due to the lack of free tokens
 <script>
 function toggleHamburger() {
   var hamburger = document.querySelector('.hamburger');
-  var menuList = document.querySelector('.dropdown-menu');
-
+  
   hamburger.classList.toggle("active");
 }
 </script>
 
+<script>
+let prevScrollPos = window.pageYOffset ;
 
+window.onscroll = () => {
+    let currentScrollPos = window.pageYOffset ;
+    prevScrollPos < currentScrollPos
+        ?document.querySelector('nav').classList.add('hide')
+        :document.querySelector('nav').classList.remove('hide')
+    prevScrollPos = currentScrollPos ;
+}
+</script>
+
+<script>
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function animateOnScroll() {
+  var skills = document.querySelectorAll(".progressBar");
+    
+  skills.forEach(function(skill) {
+    if (isElementInViewport(skill)) {
+      skill.classList.add("animate");
+    }
+  });
+  var animatedElements = document.querySelectorAll("#me");
+  animatedElements.forEach(function(element) {
+    if (isElementInViewport(element)) {
+      element.classList.add("aboutOnScreen");
+    }
+  });
+  var cards = document.querySelectorAll(".card");
+    
+  cards.forEach(function(card) {
+    if (isElementInViewport(card)) {
+      card.classList.add("cardsOnScreen");
+    }
+  }); 
+}
+window.addEventListener("scroll", animateOnScroll);
+  animateOnScroll();
+</script>
+
+<script>
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load",function(){
+  loader.classList.add("loaded")
+})
+</script>
 </body>
 </html>
