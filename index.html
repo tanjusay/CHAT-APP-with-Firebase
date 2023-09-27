@@ -1,379 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PERSONAL WEBSITE until employment</title>
-    <!-- CSS -->
-  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="srcs/1.png">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">  
-  <link rel="stylesheet" href="style.css"> 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a developer's portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ 
+            reset: false,
+            distance: '50px',
+            duration: 1500,
+            delay: 400 });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js">
+    </script>
+    
 </head>
-
-  
 <body>
-
-<div id="preloader" class="d-flex align-items-center justify-content-center">
-  <iconify-icon icon="eos-icons:three-dots-loading" style="color: seagreen; font-size: 80px;"></iconify-icon>
-</div>
-  
-<nav id="nav" class="navscroll navbar navbar-expand-md fixed-top navbar-md-static-top py-2 bg-light shadow-sm ">
-  <div id="logo" class="container-lg">
-    <a href="#" class="navbar-brand px-2">
-       tanjus<span>ai</span>
-    </a>
-    <button class="navbar-toggler p-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#nav-list" 
-            aria-controls="main-nav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            id="toggler-btn">
-      <div class="hamburger"
-           onclick="toggleHamburger(this)">
-        <div id="bars">
-          <span class=""></span>
-          <span class=""></span>
-          <span class=""></span>
+    <!-- navigation -->
+    <nav id="nav" class=" navscroll navbar navbar-expand-md fixed-top navbar-md-static-top p-0 px-0 d-flex justify-content-end">
+        <div id="logo" class="container-md">
+            <div class="navbar-brand">
+                tanjusay
+            </div>
+            <div class="d-flex"> 
+                <div class="d-flex d-none d-md-block gap-5">
+                    <a href="#home" class="nav-link text-decoration-none d-inline-block px-2" >HOME</a>
+                    <a href="#about" class="nav-link text-decoration-none d-inline-block px-2">ABOUT</a>
+                    <a href="#services" class="nav-link text-decoration-none d-inline-block px-2">SERVICE</a>
+                    <a href="#contact" class="nav-link text-decoration-none d-inline-block ">CONTACT</a>
+                </div>
+                <div class="d-md-none">
+                        <a id="nav-button" class="btn text-secondary menu m-0 p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img id="layer" class="p-0 m-0" src="srcs/hamburger-5-svgrepo-com.svg" alt=""></a>
+               </div>
+            </div>
         </div>
-      </div>
-    </button>
-
-    <div id="nav-list"
-         class="collapse navbar-collapse text-start justify-content-end p-md-2">
-      <ul class="navbar-nav fw-light p-2 gap-2"> 
-        <li class="nav-item ">
-          <span class="d-inline-block px-1">            
-              <a href="#" 
-             class="nav-link ">Home</a>
-           </span>             
-        </li>       
-        <li class="nav-item ">
-          <span class="d-inline-block px-1">            
-              <a href="#about" 
-             class="nav-link ">About</a>
-           </span>             
-        </li>          
-        <li class="nav-item">
-          <span class="d-inline-block px-1 ">
-              <a href="#skills" 
-             class="nav-link ">Skills</a>
-           </span>
-        </li>
-        <li class="nav-item">
-          <span class="d-inline-block px-1">
-              <a href="#services" 
-             class="nav-link ">Services</a>
-          </span>
-        </li>
-        <li class="nav-item pb-3 pb-md-0">
-          <span class="d-inline-block px-1 ">
-              <a href="#social" 
-             class="nav-link ">Get in Touch</a>
-           </span>
-        </li>
-      </ul>
-    </div>
+    </nav>    
     
-  </div>   
-</nav>
-
-<div id="main" class="vh-100 d-flex align-items-center shadow">
-<div class="container-sm">
-
-  <div class="row justify-content-center">
-    
-    <div class="col-md-11 text-center"> 
-      
-      <h1 class="display-1">tanjusai</h1>
-      <h3 class="display-6">
-        Software Developer
-      </h3>
-      <p class="lead">
-        From Circuits to Code :
-      </p>
-      <h4 class="mb-3">
-        Journey to Full-Stack Excellence 
-      </h4>  
-      <a href="tanjusayresume.docx" class="btn mx-1" download>Download CV</a>
-
-      <a href="#about" class="btn mx-1">About Me</a>
-    </div>
-    
-  </div>
-  
-</div>
-</div>
-
-<section id="about" class="text-secondary d-flex align-items-center vh-100 bg-light"> 
-  <div class="container-sm "> 
-    <div class="row justify-content-center">
-      <div class="col-sm-4"> 
-        <h1 id="me" class="display-1 position-absolute d-md-none"> About 
-          </br><span id="me"> Me</span>
-        </h1>
-        <img id="me" class="px-5 pt-3 p-sm-4" src="srcs/profile.png" alt=""> 
-      </div>
-      
-      <div class="col-sm-8 mt-md-4 text-md-start">
-        <h2 id="me"class="fw-normal display-4 d-none d-md-block px-3">About <span>Me</span>
-        </h2>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="custom-cursor"></div> 
+        <div class="offcanvas-header m-0 pt-5 pb-4 pt-md-4 pb-md-3">
+            <h3 class="offcanvas-title ms-4" id="offcanvasRightLabel">tanjusay</h3>
+            <button type="button" class="btn-close me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
         
-        <p id="me" class="lead px-3"> HELLO! 
-        I'm Christian Tanjusay,
-        </br>a Mechatronics Technology graduate turned software enthusiast. From gears and circuits to the captivating world of coding.</br> Don't hesitate to 
-        <a class="text-decoration-none" href="mailto:tanjusaychristianworks@gmail.com">reach out</a> — I'm always eager for a thoughtful conversation. </p>
-      </div> 
-    </div> 
-  </div> 
-</section> 
-
-<section id="skills" class="vh-100 bg-light">
-  
-<div class="container-md text-secondary text-center">
-    
-  <h2 class=" pt-5 text-center text-secondary display-4 fw-normal">My <span>Skills</span></h2>  
-  <p class="text-secondary lead mb-4 "> Skills and Proficiencies </p>
-  
-  <div class="row g-4 g-md-5 fw-bold justify-content-evenly">    
-  
-  <div class="col-10 col-md-5 text-start">
-    <p class="lead fw-normal m-0 px-1 ">
-      html</p>
-    <div class="progress shadow">
-      <div class=" px-2 text-end progressBar" 
-           style="width: 90%"> 90% 
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-10 col-md-5 text-start">
-    <p class="lead fw-normal m-0 px-1">
-      css / bootsrap</p> 
-    <div class="progress shadow ">
-      <div class=" px-2 text-end progressBar"  
-           style="width: 80%"> 80%
-     </div>
-    </div>
-  </div>
-
-  <div class="col-10 col-md-5 text-start">
-    <p class="lead fw-normal m-0 px-1">
-      python</p> 
-    <div class="progress shadow ">
-      <div class=" px-2 text-end progressBar" 
-           style="width: 65%"> 65%
-    </div>
-    </div>
-  </div>
-  
-  <div class="col-10 col-md-5 text-start">
-    <p class="lead fw-normal m-0 px-1">
-      javascript</p> 
-    <div class="progress shadow">
-      <div class=" px-2 text-end progressBar" 
-           style="width: 60%"> 60%
-    </div>
-    </div>
-  </div>
-  
-  <div class="col-10 col-md-5 text-start">
-    <p class="lead fw-normal m-0 px-1">
-      mysql</p> 
-    <div class="progress shadow ">
-      <div class=" px-2 text-end progressBar" 
-           style="width: 50%"> 50%
-    </div>
-    </div>
-  </div>
-  
-  <div class="col-10 col-md-5 text-start"> 
-    <p class="lead fw-normal m-0 px-1">
-      streamlit</p> 
-    <div class="progress shadow bg-light"> 
-      <div class="px-2 text-end progressBar" style="width: 50%"> 50% 
+        <div id="offcanvas" class="offcanvas-body text-center">
+            <ul class="list-unstyled d-flex flex-column gap-5 gap-md-4 py-5 py-md-4">
+                <li id="link"><a href="#home" class="m-link text-decoration-none" onclick="closeOffcanvasAndScrollToSection('home')" >HOME</a></li>
+                <li id="link"><a href="#about" class="m-link text-decoration-none" onclick="closeOffcanvasAndScrollToSection('about')">ABOUT</a></li>
+                <li id="link"><a href="#services" class="m-link text-decoration-none" onclick="closeOffcanvasAndScrollToSection('services')">SERVICE</a></li>
+                <li id="link"><a href="#contact" class="m-link text-decoration-none" onclick="closeOffcanvasAndScrollToSection('#contact')">CONTACT</a></li>
+            </ul>
+            <div class="other position-absolute start-50 translate-middle d-flex gap-3">
+                <a href="https://www.cloudhq.net/meeting/tanjusaychristianworks@gmail.com" class="d-inline-block btn other-link text-decoration-none p-2 mb-3"><img class="pe-1" src="srcs/calendar-good(1).svg">Book Me</a>
+                <a href="ChristianTanjusay.docx" download class="d-inline-block btn other-link text-decoration-none p-2 mb-3"><img class=" pe-1" src="srcs/download-svgrepo-com.svg">Resume</a>
+            </div>            
+        </div>
+        <div class="footer text-center">
+                <p class="text-secondary">&copy2023 tanjusai</p>
         </div> 
-      </div> 
-    </div>  
+    </div>
+    
+    <!-- main -->
+    <section id="home" class="section d-flex justify-content-center align-items-center ">
+        <div class="container-md">
+            <div class="row justify-content-center">
+                <div class="col-md-6 align-items-center d-flex flex-column">
+                    <header class="text-center">
+                        
+                        <h1 id="head1" class="display-2 p-0">tanjus<span>ai</span></h1>
+                        
+                        <p id="head2" class="lead px-5 py-4 px-md-0">“ building dream, one line of code at a time ”</p>
+                    </header> 
                     
-  </div> 
-</div>
-</section>
-   
-<section id="services" class="bg-light">
-  <div class="container-md text-secondary text-center pb-5">
-    <h2 class="pt-5 display-4 fw-normal">What <span>I Do</span></h2>
-    <p class="text-secondary lead mb-4"> Explore What I Have to Offer</p>
-    <div class="row g-3 justify-content-center px-3">
-
-      <div class="card border-0 col-sm-5 m-3 col-lg-5 shadow-sm text-secondary">
-        <div class="card-body mb-3">
-          <i class="bi bi-code-slash fs-1"></i>
-          <h3 class="card-title fw-bold">Web Development</h3>
-          <p class="card-text">Crafting responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+                    <div class="social mt-5 position-relative ">
+                        <a id="fb" href="https://www.facebook.com/curse.chan.3" class="btn p-0 text-decoration-none rounded-circle "><img class="" src="srcs/facebook-with-circle.svg" alt="fb-icon"></a>
+                        <a id="gh" href="https://www.github.com/tanjusay" class="btn p-0 mx-3 text-decoration-none rounded-circle "><img src="srcs/github-with-circle.svg" alt="github-icon"></a>
+                        <a id="li" href="https://www.linkedin.com/in/christian-tanjusay-459a79176 " class="btn p-0 text-decoration-none rounded-circle "><img src="srcs/linkedin-with-circle.svg" alt="LinkedIn-icon"></a>
         </div>
-      </div>
-
-      <div class="card border-0 col-sm-5 m-3 col-lg-5 shadow-sm text-secondary ">
-        <div class="card-body mb-3">
-          <i class="bi bi-palette fs-1"></i>
-          <h3 class="card-title fw-bold">UI/UX Design</h3>
-          <p class="card-text">Creating visually appealing and intuitive user interfaces that enhance user experience.</p>
+                </div>
+                
+            </div>
+            
         </div>
-      </div>
-      
-      <div class="card border-0 col-sm-5 m-3 col-lg-5 shadow-sm text-secondary ">
-        <div class="card-body mb-3">
-          <i class="bi bi-search fs-1"></i>
-          <h3 class="card-title fw-bold">Quality Assurance</h3>
-          <p class="card-text"> Ensuring reliability and functionality of your software / website.</p>
+        <div class="position-absolute d-flex justify-content-center align-items-center " id="box"><div id="particles-js" class="position-fixed"></div> 
+            
+            
         </div>
-      </div>
-      
-
-      <div class="card border-0 col-sm-5 col-lg-5 m-3 shadow-sm text-secondary">
-        <div class="card-body mb-3">
-          <i class="bi bi-link-45deg fs-1"></i>
-          <h3 class="card-title fw-bold">API Integration</h3>
-          <p class="card-text">Integrating APIs to enhance the functionality and features of your applications.</p>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section p-2">   
+        <div class="container-md">
+            <div class="row justify-content-center align-items-center py-5">
+                
+                <div class="col-md-7 p-3">
+                    <div class="headline">
+                        <h2>Christian Tanjusay</h2>
+                        <h4 class="fw-bold pb-2 reveal-1">
+                            <span class="strings"></span>
+                        </h4> 
+                        <p class="lead reveal-2">A Mechatronics Technology graduate with a passion for software development and IoT networking. I aspire to become a full-stack software engineer and thrive on solving complex problems using technology.</p>
+                        <p class="lead reveal-3">I believe that continuous learning is essential in the ever-evolving tech landscape, and I'm always eager to expand my skill set to tackle new challenges effectively.</p> 
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="card border-0 col-sm-5 col-lg-5 m-3 shadow-sm text-secondary">
-        <div class="card-body mb-3">
-          <i class="bi bi-scissors fs-1"></i>
-          <h3 class="card-title fw-bold">Web Scraping</h3>
-          <p class="card-text">Collecting data from websites efficiently through web scraping techniques.</p>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="section text-center py-2">
+        <div class="container-md">
+            <div class="row justify-content-center gap-3">
+                <div class="col-md-5 p-3 pe-md-4 text-end d-flex flex-column  justify-content-center">
+                    <h3 class=" fw-bold p-3">SKILLS</h3>
+                    <ul class="list-unstyled lead px-2">
+                        <p>HTML CSS & JavaScript</p>
+                        <p>Python Programming</p> 
+                        <p>Responsive Web Design</p> 
+                        <p>Networking and Protocols </p>
+                        <p>SQL NoSQL</p>
+                        <p>Version Control (Git/GitHub)</p>
+                        <p>Problem Solving and Algorithm</p>
+                        <p>API Integration</p>
+                    </ul>
+            
+                </div>  
+                
+                <div class="col-md-5 p-3 ps-md-4 text-start projects">
+                    <h3 class="p-3 fw-bold">WORKS</h3>
+                    <ul class="list-unstyled lead px-2" id="linksContainer">
+                        <a href="https://tanjusay.github.io/DRAWING-WEB-APP/ " class="lead text-decoration-none"><p>Drawing App</p>
+                        </a>
+                        
+                        <a href="https://tanjusay-wordcloud-web-app-streamlit-app-5ds3rn.streamlit.app/ " class="lead text-decoration-none"><p>PDF to WordCloud</p>
+                        </a>
+        
+                        <a id="pg" href="https://tanjusay-password-generator-web-app-streamlit-app-g5g2dc.streamlit.app/ " class="lead text-decoration-none"><p>Password Generator</p>
+                        </a>
+                        
+                        <a href="https://tanjusay-personalqrcodegenerator-streamlit-app-sybfps.streamlit.app/" class="lead text-decoration-none"><p>QR Code Generator</p>
+                        </a>
+                        
+                        <a href="https://tanjusay.github.io/tic-tac-toe-game-/ " class="lead text-decoration-none"><p>Tic Tac Toe Classic </p>
+                        </a>
+                        <a href="https://tanjusay-recipe-finder-web-app-streamlit-app-02q6bi.streamlit.app/ " class="lead text-decoration-none"><p>Recipe Finder</p>
+                        </a>
+                        <a href="https://tanjusay.github.io/BMI-CALCULATOR/" class="lead text-decoration-none"><p>BMI Calculator</p>
+                        </a>
+                        <a href="https://github.com/tanjusay/image-generator-w--Dall-e-" class="lead text-decoration-none"><p>Image Generator (Dall-e)</p>
+                        </a>  
+                        
+                    </ul>
+                </div>
+                
+            </div>
+            
         </div>
-      </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="section pt-3">
+        <div class="container-md text-center py-5">
+            <h3>What I Do</h3>
+            <p> Explore What I Have to Offer</p>
+            <div class="row justify-content-center gap-4 p-2">
+                
+                <div class="card card-1 col-md-5 col-lg-4 service p-0 m-0">
+                    <div class="card-wrap">                    
+                    <div class="card-body">
+                        <i class="fas fa-cogs fa-xl mx-auto m-2"></i> 
+                        <h3 class="card-title fw-bold">Web Development</h3>
+                        <p class="card-text">Crafting responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+                    </div>
+                    </div>                    
+                </div>
+                <!-- 
+                <div class="card col-sm-5 col-lg-4 service p-0 m-0">
+                    <div class="card-body mb-3">
+                        <i class="fas fa-paint-brush fa-xl mx-auto m-2"></i>
+                        <h3 class="card-title fw-bold">UI/UX Design</h3>
+                        <p class="card-text">Creating visually appealing and intuitive user interfaces that enhance user experience.</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card card-2 col-md-5 col-lg-4 service p-0 m-0">
+                    <div class="card-wrap">    
+                    <div class="card-body mb-3">
+                        <i class="fas fa-check-circle fa-xl mx-auto m-2"></i>
+                        <h3 class="card-title fw-bold">Quality Assurance</h3>
+                        <p class="card-text">Ensuring reliability and functionality of your software/website.</p>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="card card-3 col-md-5 col-lg-4 service p-0 m-0">
+                    <div class="card-wrap">    
+                    <div class="card-body mb-3">
+                        <i class="fas fa-plug fa-xl mx-auto m-2"></i>
+                        <h3 class="card-title fw-bold">Solutions Integration</h3>
+                        <p class="card-text">Integrating solutions to enhance the functionality and features of your applications.</p>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="card card-4 col-md-5 col-lg-4 service p-0 m-0">
+                    <div class="card-wrap">    
+                    <div class="card-body mb-3">
+                        <i class="fas fa-database fa-xl mx-auto m-2"></i>
+                        <h3 class="card-title fw-bold">Web Scraping</h3>
+                        <p class="card-text">Collecting data from websites efficiently through web scraping techniques.</p>
+                    </div>
+                    </div>
+                </div>
 
-    </div>
-  </div>
-</section>
-
-
-
-<section id="social" class="bg-secondary shadow-lg">
-  <div class="container pl-md-5 ">
-    <div class="row text-start px-md-5">
-      <div class="col-auto mx-2 mx-md-4">
-        <div class="d-flex mt-4">
-          <a class="social-icon text-decoration-none" href="https://www.linkedin.com/in/christian-tanjusay-459a79176">
-          <img src="srcs/linkedin-with-circle.svg" alt="LinkedIn"> LinkedIn</a>
+            </div>
         </div>
-        <div class="d-flex">
-          <a class="social-icon text-decoration-none" href=" https://www.facebook.com/curse.chan.3 ">
-          <img src="srcs/facebook-with-circle.svg" alt="Facebook"> Facebook </a>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section pt-5">
+        <div class="container-md text-center">
+            <div class="row justify-content-center px-2 py-4">
+                <h3>Contact Me</h3>                
+                <p>Get in touch with me here.</p> 
+                
+                <div class="col-md-5 py-4 px-md-4 d-none">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7899.123708829017!2d122.5260!3d9.8035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOeW9kOC3o-WMl-S_kyDExJzAyLjU3IkU!5e0!3m2!1sen!2sus!4v1644974501473!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div> 
+                
+                
+                <div class="col-md-5 form text-start">
+                <form action="https://formsubmit.co/75662eaa169bfb442687fa8d7995563d" method="POST" class="py-4 px-2">
+                    
+                    <div class="py-2">
+                        <label for="name" class="form-label">Name :</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required>
+                    </div>
+                    
+                    <div class="py-2">
+                        <label for="email" class="form-label">Email :</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="JaneDoe@Email.com" required>
+                    </div>
+                    
+                    <div class="py-2">
+                        <label for="message" class="form-label">Message :</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Hi there!" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn mt-2">Submit</button>
+                    
+                </form> 
+                
+                </div>
+            </div>
         </div>
-        <div class="d-flex">
-         <a class="social-icon text-decoration-none" href="https://www.github.com/tanjusay">
-          <img src="srcs/github-with-circle.svg" alt="GitHub"> Github </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="p-1 px-3 px-md-5 footer text-light text-center container">
-    <p>&copy; tanjusai</p>
-  </div>
-</section>
+    </section> 
+    
+    <div class="footer text-center">
+        <p class="text-secondary">&copy2023 tanjusai</p>
+        </div> 
+                        <!--  
+                        <!--  -->
+                
+    <script src="https://kit.fontawesome.com/3588c31a65.js" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="app.js"></script>
+    
+    <script>
+        const customCursor = document.querySelector('.custom-cursor');
 
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!--Start of Tawk.to Script -->
-<script type="text/javascript"> 
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date(); 
-(function(){ 
- var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]; 
- s1.async=true; 
- s1.src='https://embed.tawk.to/6445d73b31ebfa0fe7f9f79b/1h5k3jeic'; 
- s1.charset='UTF-8'; 
- s1.setAttribute('crossorigin','*'); 
- s0.parentNode.insertBefore(s1,s0); 
- })(); 
-</script> 
-
-<!--End of Tawk.to Script-->
-
-<script>
-    $(document).ready(function() {
-        $('#nav-list a').on('click', function() {
-            $('#nav-list a').removeClass('active');
-            $(this).addClass('active');
+        window.addEventListener('mousemove', (e) => {
+            customCursor.style.left = `${e.clientX}px`;
+            customCursor.style.top = `${e.clientY}px`;
         });
-    });
-</script>
 
-<script>
-function toggleHamburger() {
-  var hamburger = document.querySelector('.hamburger');
-  
-  hamburger.classList.toggle("active");
-}
-</script>
-
-<script>
-let prevScrollPos = window.pageYOffset ;
-
-window.onscroll = () => {
-    let currentScrollPos = window.pageYOffset ;
-    prevScrollPos < currentScrollPos
-        ?document.querySelector('nav').classList.add('hide')
-        :document.querySelector('nav').classList.remove('hide')
-    prevScrollPos = currentScrollPos ;
-}
-</script>
-
-<script>
-function isElementInViewport(el) {
-  var rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-function animateOnScroll() {
-  var skills = document.querySelectorAll(".progressBar");
+        window.addEventListener('touchmove', (e) => {
+            const touch = e.touches[0];
+            if (touch) {
+                customCursor.style.left = `${touch.clientX}px`;
+                customCursor.style.top = `${touch.clientY}px`;
+            }
+        });
+    </script>
     
-  skills.forEach(function(skill) {
-    if (isElementInViewport(skill)) {
-      skill.classList.add("animate");
-    }
-  });
-  var animatedElements = document.querySelectorAll("#me");
-  animatedElements.forEach(function(element) {
-    if (isElementInViewport(element)) {
-      element.classList.add("aboutOnScreen");
-    }
-  });
-  var cards = document.querySelectorAll(".card");
+    <script>
+        ScrollReveal().reveal('.headline h2', { delay: 300, origin:'left'}); 
+        ScrollReveal().reveal('.headline .reveal-1', { delay: 400, origin:'left'});
+ScrollReveal().reveal('.headline .reveal-2', { delay: 500, origin:'left'});
+ScrollReveal().reveal('.headline .reveal-3', { delay: 600, origin:'left'});
+ScrollReveal().reveal('#fb', { delay: 300, origin:'bottom'});
+ScrollReveal().reveal('#gh', { delay: 400, origin:'bottom'});
+ScrollReveal().reveal('#li', { delay: 500, origin:'bottom'});
+ 
+    </script>
     
-  cards.forEach(function(card) {
-    if (isElementInViewport(card)) {
-      card.classList.add("cardsOnScreen");
-    }
-  }); 
+    <script>
+        var typed = new Typed('.strings', {
+            strings: ["UI/UX DESIGNER",
+                      "WEB DEVELOPER",
+                      "SOFTWARE DEVELOPER" ],
+            loop: true,
+            typeSpeed: 50,
+            backSpeed: 10,
+            smartBackspace: false,
+            startDelay: 0
+        });
+    </script>
+
+    <script>
+    let prevScrollPos = window.pageYOffset ;
+
+    window.onscroll = () => {
+        let currentScrollPos = window.pageYOffset ;
+        prevScrollPos < currentScrollPos
+            ?    document.querySelector('nav').classList.add('hide')
+            :document.querySelector('nav').classList.remove('hide')
+        prevScrollPos = currentScrollPos ;
 }
-window.addEventListener("scroll", animateOnScroll);
-  animateOnScroll();
-</script>
+    </script>
 
-<script>
-var loader = document.getElementById("preloader");
 
-window.addEventListener("load",function(){
-  loader.classList.add("loaded")
-})
-</script>
+  <script>
+  particlesJS("particles-js", {
+    particles: {
+      number: {
+        value: 200, // Adjust the number of particles
+        density: {
+          enable: true,
+          value_area: 800,
+        },
+      },
+      color: {
+        value: ["#80ffff"], // Particle color
+      },
+      shape: {
+        type: "circle", // Particle shape (circle, edge, triangle, polygon, star, image)
+      },
+      opacity: {
+        value: .5, // Particle opacity
+        random: true,
+      },
+      size: {
+        value: 2, // Particle size
+        random: true,
+      },
+      line_linked: {
+        enable: true,
+        distance: 125, // Distance between connected particles
+        color: "#555577",
+        opacity: .2,
+        width: 1,
+      },
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: {
+          enable: true,
+          mode: "repulse",
+        },
+        onclick: {
+          enable: true,
+          mode: "pull",
+        },
+      },
+      modes: {
+        repulse: {
+          distance: 100, // Repulsion distance on hover
+        },
+        push: {
+          particles_nb: 0, // Number of particles to push on click
+        },
+      },
+    },
+    retina_detect: true,
+  });
+  </script>
+
 </body>
 </html>
